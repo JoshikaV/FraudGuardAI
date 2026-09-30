@@ -1,0 +1,23 @@
+# Virtual environment
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Dataset - too large for GitHub
+data/*.csv
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/
+
+# CatBoost temporary files
+catboost_info/
