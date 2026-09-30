@@ -2,13 +2,13 @@
 
 ### On-Device Financial Fraud & Anomaly Copilot for Snapdragon PCs
 
-FraudGuard AI is a privacy-focused financial fraud detection prototype
+FraudGuard AI is a privacy focused financial fraud detection prototype
 designed to analyze transaction risk locally and provide an interpretable
 risk assessment.
 
 The system uses machine learning to convert transaction information into
 a fraud risk score, LOW/MEDIUM/HIGH risk classification, recommended
-action, and a human-readable explanation.
+action, and a human readable explanation.
 
 ---
 
@@ -17,9 +17,9 @@ action, and a human-readable explanation.
 Financial fraud detection systems often rely on centralized processing
 of sensitive transaction information.
 
-FraudGuard explores a privacy-first alternative in which fraud-risk
+FraudGuard explores a privacy first alternative in which fraud risk
 inference can be performed locally, with a deployment path targeting
-Snapdragon-powered PCs.
+Snapdragon powered PCs.
 
 ---
 
@@ -80,7 +80,7 @@ simple accuracy.
 Current prototype:
 
 - CatBoost binary classifier
-- Chronological 80/20 train-validation split
+- Chronological 80/20 train validation split
 - Class balancing
 - Mixed numerical and categorical features
 - Threshold optimization
@@ -104,7 +104,7 @@ F1 rather than assuming the default 0.50 threshold.
 
 ## 🚦 Risk Engine
 
-FraudGuard converts the model score into an application-level risk
+FraudGuard converts the model score into an application level risk
 assessment:
 
 ```text
@@ -124,7 +124,7 @@ Instead of displaying only a binary prediction, FraudGuard provides:
 - Model risk score
 - Risk level
 - Recommended action
-- Plain-English risk explanation
+- Plain English risk explanation
 
 Example:
 
@@ -149,7 +149,7 @@ Risk Signals:
 ## 🖥️ Interactive Dashboard
 
 The Streamlit interface allows a user to enter transaction information
-and run the FraudGuard risk-analysis pipeline interactively.
+and run the FraudGuard risk analysis pipeline interactively.
 
 Run:
 
@@ -198,7 +198,7 @@ Local inference can provide:
 - Lower network latency
 - Greater privacy for transaction features
 - Offline analysis capability
-- A path toward hardware-accelerated AI inference
+- A path toward hardware accelerated AI inference
 
 ---
 
@@ -298,12 +298,12 @@ streamlit run app/dashboard.py
 
 ## 🔮 Future Work
 
-- ONNX-compatible fraud classifier
+- ONNX compatible fraud classifier
 - Qualcomm AI Hub compilation and profiling
 - Snapdragon NPU execution through QNN
-- Model-calibration analysis
-- Model-attribution-based explanations
-- Behavioral/velocity features
+- Model calibration analysis
+- Model attribution based explanations
+- Behavioral or velocity features
 - Production transaction API integration
 - Drift monitoring
 
